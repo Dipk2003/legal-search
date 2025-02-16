@@ -12,7 +12,7 @@ export const generateEmbedding = async (text) => {
       {
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer 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`,
+          Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
         },
       }
     );
